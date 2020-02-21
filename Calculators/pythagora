@@ -1,0 +1,17 @@
+using System;
+namespace pythagora_laskuri
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Kateetti 1: ");
+            double Sivu1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Kateetti 2: ");
+            double Sivu2 = Convert.ToDouble(Console.ReadLine());
+            double x=((Sivu1*Sivu1)+(Sivu2*Sivu2));
+            Console.WriteLine("Hypotenuusa: " + (Math.Sqrt(x)));
+            Console.ReadLine();
+        }
+    }
+}
