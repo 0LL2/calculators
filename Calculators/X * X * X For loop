@@ -1,0 +1,19 @@
+using System;
+
+namespace Harjoitus3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double[] kaikki = new double[3];
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write($"Syötä luku {i}: ");
+                double luku = Convert.ToDouble(Console.ReadLine());
+                kaikki[i] = kaikki[i] + luku;
+            }
+            Console.WriteLine($"{kaikki[0]} * {kaikki[1]} * {kaikki[2]}: " + (kaikki[0] * kaikki[1] * kaikki[2]));
+        }
+    }
+}
