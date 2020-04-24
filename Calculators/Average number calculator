@@ -1,0 +1,19 @@
+using System;
+
+namespace Harjoitus3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double keskiarvo = 0;
+            for (int i = 1; i < 6; i++)
+            {
+                Console.Write($"Syötä luku {i}: ");
+                double luku = Convert.ToDouble(Console.ReadLine());
+                keskiarvo = keskiarvo + luku;
+            }
+            Console.WriteLine("Keskiarvo: {0}", keskiarvo / 5);
+        }
+    }
+}
